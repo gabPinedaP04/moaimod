@@ -2,6 +2,7 @@ package net.gabfloppa.moaimod;
 
 import com.mojang.logging.LogUtils;
 import net.gabfloppa.moaimod.block.ModBlocks;
+import net.gabfloppa.moaimod.item.ModCreativeModeTabs;
 import net.gabfloppa.moaimod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -38,6 +39,10 @@ public class MoaiMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+
+        ModCreativeModeTabs.register(modEventBus);
+
+
         ModItems.register(modEventBus); // Awui le pasamos el item que estamos creando en la otra clase
         ModBlocks.register(modEventBus); // Tambien le decimos que registre los bloques que haremos
 
@@ -63,6 +68,8 @@ public class MoaiMod
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.FLOPPIUM_BLOCK);
+            event.accept(ModBlocks.NIGGUM_BLOCK);
+
         }
     }
 

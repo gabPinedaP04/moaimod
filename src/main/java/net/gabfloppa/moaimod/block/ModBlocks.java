@@ -21,7 +21,14 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MoaiMod.MOD_ID);
 
+    //rEGISTRAR EL BLOQUE
+
     public static final RegistryObject<Block> FLOPPIUM_BLOCK = registerBlock("floppium_block",
+            ()-> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.0F).requiresCorrectToolForDrops().sound(SoundType.ANVIL)
+            ));
+
+    public static final RegistryObject<Block> NIGGUM_BLOCK = registerBlock("niggum_block",
             ()-> new Block(BlockBehaviour.Properties.of()
                     .strength(1.0F).requiresCorrectToolForDrops().sound(SoundType.GLASS)
             ));

@@ -2,5 +2,10 @@
   "item.moaimod.moai" : "Moai nigga",
   "item.moaimod.floppa" : "FLOPPIUM",
 
-  "block.moaimod.floppium_block" : "Bloque de Floppium"
+  "block.moaimod.floppium_block" : "Bloque de Floppium",
+  "block.moaimod.niggum_block" : "Bloque de Niggum",
+
+  "creativetab.moaimod.moai_block" : "Bloques de moai",
+  "creativetab.moaimod.moai_items" : "Items de Moai"
+
 }
