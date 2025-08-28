@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moaimod:floppium_block"
+    }
+  ],
+  "result": {
+    "id": "moaimod:floppa",
+    "count": 9
+  }
+}

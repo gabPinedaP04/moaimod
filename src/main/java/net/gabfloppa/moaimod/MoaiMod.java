@@ -20,18 +20,34 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+import net.minecraft.world.item.crafting.Recipe;
+import net.minecraft.world.item.crafting.RecipeManager;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MoaiMod.MOD_ID)
 public class MoaiMod
 {
+
+
+
+
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "moaimod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
 
+
+
+
     public MoaiMod()
     {
+
+
+
+
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the commonSetup method for modloading
@@ -51,6 +67,11 @@ public class MoaiMod
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+
+// Después de registrar, imprime:
+        ModItems.logItems();
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -58,12 +79,15 @@ public class MoaiMod
 
     }
 
+
+
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.MOAI);
             event.accept(ModItems.FLOPPA);
+            event.accept(ModItems.RAW_FLOPPA);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
