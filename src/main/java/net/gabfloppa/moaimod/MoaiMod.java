@@ -93,6 +93,9 @@ public class MoaiMod
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.FLOPPIUM_BLOCK);
             event.accept(ModBlocks.NIGGUM_BLOCK);
+            event.accept(ModBlocks.FLOPPIUM_DEEPSLATE_ORE);
+            event.accept(ModBlocks.FLOPPIUM_ORE);
+
 
         }
     }

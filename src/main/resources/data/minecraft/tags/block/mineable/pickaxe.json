@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values" : [
+    "moaimod:floppium_block",
+
+    "moaimod:floppium_ore",
+
+    "moaimod:floppium_deepslate_ore"
+  ]
+}

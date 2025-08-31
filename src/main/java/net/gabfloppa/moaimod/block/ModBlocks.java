@@ -3,9 +3,11 @@ package net.gabfloppa.moaimod.block;
 
 import net.gabfloppa.moaimod.MoaiMod;
 import net.gabfloppa.moaimod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,6 +34,19 @@ public class ModBlocks {
             ()-> new Block(BlockBehaviour.Properties.of()
                     .strength(1.0F).requiresCorrectToolForDrops().sound(SoundType.GLASS)
             ));
+
+
+    public static final RegistryObject<Block> FLOPPIUM_ORE = registerBlock("floppium_ore",
+            ()-> new DropExperienceBlock(UniformInt.of(2,4) ,
+                    BlockBehaviour.Properties.of().strength(1.0F).requiresCorrectToolForDrops().sound(SoundType.AMETHYST) )
+            );
+
+    public static final RegistryObject<Block> FLOPPIUM_DEEPSLATE_ORE = registerBlock("floppium_deepslate_ore",
+            ()-> new DropExperienceBlock(UniformInt.of(2,4) ,
+                    BlockBehaviour.Properties.of().strength(1.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE) )
+    );
+
+
 
     // Método genérico para registrar un bloque
     // 1. Recibe un nombre y un Supplier (que crea el bloque)

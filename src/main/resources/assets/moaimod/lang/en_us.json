@@ -6,6 +6,8 @@
 
   "block.moaimod.floppium_block" : "Bloque de Floppium",
   "block.moaimod.niggum_block" : "Bloque de Niggum",
+  "block.moaimod.floppium_deepslate_ore" : "Bloque de Floppium deepslate",
+  "block.moaimod.floppium_ore" : "Mineral de floppium",
 
   "creativetab.moaimod.moai_block" : "Bloques de moai",
   "creativetab.moaimod.moai_items" : "Items de Moai"
