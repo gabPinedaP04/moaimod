@@ -1,6 +1,7 @@
 package net.gabfloppa.moaimod.item;
 
 import net.gabfloppa.moaimod.MoaiMod;
+import net.gabfloppa.moaimod.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,6 +23,8 @@ public class ModItems {
     public static final RegistryObject<Item> FLOPPA = ITEMS.register("floppa", () -> new Item((new Item.Properties())));
 
     public static final RegistryObject<Item> RAW_FLOPPA = ITEMS.register("raw_floppa", () -> new Item((new Item.Properties())));
+
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel", () -> new ChiselItem((new Item.Properties().durability(32))));
 
 
     public static void register(IEventBus eventBus){

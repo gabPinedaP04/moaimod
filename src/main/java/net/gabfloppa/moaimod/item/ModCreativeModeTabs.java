@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(ModItems.FLOPPA.get());
                         output.accept(ModItems.MOAI.get());
+                        output.accept(ModItems.CHISEL.get());
 
                     })
                     .build());

@@ -88,6 +88,7 @@ public class MoaiMod
             event.accept(ModItems.MOAI);
             event.accept(ModItems.FLOPPA);
             event.accept(ModItems.RAW_FLOPPA);
+            event.accept(ModItems.CHISEL);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
