@@ -32,6 +32,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.NIGGUM_BLOCK.get());
                         output.accept(ModBlocks.FLOPPIUM_BLOCK.get());
+                        output.accept(ModBlocks.MAGIC_BLOCK.get());
                     })
                     .build());
 

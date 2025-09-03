@@ -2,6 +2,7 @@ package net.gabfloppa.moaimod.block;
 
 
 import net.gabfloppa.moaimod.MoaiMod;
+import net.gabfloppa.moaimod.block.custom.MagicBlock;
 import net.gabfloppa.moaimod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -46,7 +47,8 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of().strength(1.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE) )
     );
 
-
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            ()-> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
     // Método genérico para registrar un bloque
     // 1. Recibe un nombre y un Supplier (que crea el bloque)
